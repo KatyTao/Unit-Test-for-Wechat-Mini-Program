@@ -2,9 +2,13 @@
 
 ## 文件配置
 下载好`miniprogram-simulate`
-`npm i —save-dev miniprogram-simulate`
+```js
+npm i —save-dev miniprogram-simulate`
+```
 以及`jest`
-`npm install —save-dev jest`
+```js
+npm install —save-dev jest
+```
 
 在根目录下创建`jest.config.js`
 配置jest
