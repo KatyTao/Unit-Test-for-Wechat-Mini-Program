@@ -3,7 +3,7 @@
 ## 文件配置
 下载好`miniprogram-simulate`
 ```js
-npm i —save-dev miniprogram-simulate`
+npm i —save-dev miniprogram-simulate
 ```
 以及`jest`
 ```js
