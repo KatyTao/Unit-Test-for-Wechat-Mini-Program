@@ -61,7 +61,7 @@ describe('main description', () => {
     
     comp.detach() //将组件从容器节点中移除，会触发detached生命周期
   })
-	//测试点击事件
+  //测试点击事件
   test('close container', async() => {
     const container = simulate.render(id)
     container.attach(document.createElement('parent-wrapper'))
@@ -131,7 +131,22 @@ module.exports = {
 };
 ```
 在根目录创建`jest.setup.js`文件，并添加
-`global.__wxConfig = { envVersion: ‘develop’ }`
+```js
+//根据自己实际用到的方法添加
+global.__wxConfig = { 
+	envVersion: ‘develop’ 
+},
+global.wx = {
+  navigateToMiniProgram: jest.fn(),
+  showLoading: jest.fn(),
+  hideLoading: jest.fn(),
+  showModal: jest.fn(),
+  request: jest.fn(),
+  getStorageSync: jest.fn(),
+  showShareMenu: jest.fn(),
+  ...
+}
+```
 
 ## 检查覆盖率
 ```node
