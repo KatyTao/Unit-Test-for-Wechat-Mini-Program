@@ -105,7 +105,9 @@ expect(...)
 `npm run test 'filepath'` / `npm run -- --watch`(保存时即时返回结果)
 
 如果出现类似Unexpected identifier的报错，尝试配置Babel
-`yarn add --dev babel-jest @babel/core @babel/preset-env`
+```js
+yarn add --dev babel-jest @babel/core @babel/preset-env
+```
 可以在工程的根目录下创建一个babel.config.js文件用于配置与你当前Node版本兼容的Babel：
 ```js
 // babel.config.js
